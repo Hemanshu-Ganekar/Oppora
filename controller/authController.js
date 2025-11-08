@@ -25,9 +25,9 @@ export const login = async (req,res,next)=>{
 }
 
 export const signin = async (req,res,next)=>{
-    let {username,password,email} = req.body
+    let {username,password,email,...info} = req.body
     password= await bcrypt.hash(password,10)
-    const user = await userModel({username,password,email})
+    const user = await userModel({username,password,email,...info})
     await user.save()
     res.status(200).json({
         "message":"Namaste Sir"

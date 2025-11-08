@@ -36,6 +36,9 @@ const userSchema =  mongoose.Schema({
     leetCode:{
         type:String
     },
+    skills:{
+        type:String
+    },
     education:{
         type:[{
             instituteName:{
