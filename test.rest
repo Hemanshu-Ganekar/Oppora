@@ -1,0 +1,175 @@
+# POST    http://localhost:3000/profile/update
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvc2hhbmkiLCJwYXNzd29yZCI6InZpa2FzIiwiaWF0IjoxNzYyMjUxMzMxLCJleHAiOjE3NjIyODczMzF9.TXj74PgqqJdnUECAtf5teGP_FOJtOMuLvuDaD3Zqks4
+
+# {
+#   "username": "Roshani",
+#   "password": "vikas",
+#   "email":"hemanshuganekar@gmail.com",
+#   "education": [
+#     {
+#       "institueName": "St Lawrence",
+#       "joining": "2012-11-01",
+#       "exit": "2025-11-01"
+#     }
+#   ],
+#   "expirence":[
+#     {
+#         "instituteName":"Amazon",
+#         "joining":"2012-11-01",
+#         "exit": "2025-11-01"
+#     }
+#   ],
+#   "fullName":"Hemanshu Viaks Ganekar",
+#   "birthDate":"2007-11-01",
+#   "description":"Indian youth congress member",
+#   "mobileNumber":9076328123,
+#   "github":"https://github.com/Hemanshu-Ganekar"
+# }
+
+# POST    http://localhost:3000/profile/addEducation
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvc2hhbmkiLCJwYXNzd29yZCI6InZpa2FzIiwiaWF0IjoxNzYyMjUxMzMxLCJleHAiOjE3NjIyODczMzF9.TXj74PgqqJdnUECAtf5teGP_FOJtOMuLvuDaD3Zqks4
+
+# { 
+#   "username": "Roshani",
+#  "toadd": [
+#     {
+#       "instituteName": "BN Bandodkar",
+#       "joining": "2012-11-01",
+#       "exit": "2025-11-01"
+#     }
+#   ]
+# }
+
+# POST    http://localhost:3000/profile/show
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJvc2hhbmkiLCJwYXNzd29yZCI6InZpa2FzIiwiaWF0IjoxNzYyMjUxMzMxLCJleHAiOjE3NjIyODczMzF9.TXj74PgqqJdnUECAtf5teGP_FOJtOMuLvuDaD3Zqks4
+
+# { 
+#   "username": "1234"
+
+# }
+
+# POST    http://localhost:3000/signin
+# Content-Type: application/json
+
+# {"username": "vikas_dev",
+#     "password": "hashed_password_789",
+#     "fullName": "Vikas Namdev Ganekar",
+#     "email": "vikas.ganekar@devmail.com",
+#     "birthDate": "1998-09-10T00:00:00Z",
+#     "description": "Backend engineer focused on API design and database management.",
+#     "mobileNumber": 9865321470,
+#     "city": "Nashik",
+#     "github": "https://github.com/vikas-ganekar",
+#     "leetCode": "https://leetcode.com/vikasdev",
+#     "skills": "Node.js, Express, MongoDB, REST APIs, Docker",
+#     "education": [
+#       {
+#         "instituteName": "Pune Institute of Computer Technology",
+#         "joining": "2016-07-01T00:00:00Z",
+#         "exit": "2020-05-31T00:00:00Z"
+#       }
+#     ],
+#     "expirence": [
+#       {
+#         "instituteName": "CodeSphere Technologies",
+#         "joining": "2021-01-15T00:00:00Z",
+#         "exit": "2024-12-31T00:00:00Z"
+#       }
+#     ]
+# }
+
+# POST  http://localhost:3000/internship/recommend
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhlbWFuc2h1LUdhbmVrYXIiLCJwYXNzd29yZCI6IlJvSGVIZVZpLTExMSIsImlhdCI6MTc2MjYwMDUxOCwiZXhwIjoxNzYyNjM2NTE4fQ.h49t9PrJVmW-J0CUOQdmi8S30Xw3le1P79trSgsDL2A
+
+# {
+#     "username":"vikas_dev"
+# }
+
+# post http://localhost:3000/login 
+# Content-Type: application/json
+
+# {
+#     "username":"Hemanshu-Ganekar",
+#     "password":"RoHeHeVi-111"
+# }
+
+# POST http://localhost:3000/internship/apply
+# Content-Type: application/json
+
+# {
+#     "username": "Hemanshu-Ganekar",
+#     "internId": "690e248b457d5f79a1d8929d"
+# }
+
+
+# POST http://localhost:3000/hackathon/add
+# Content-Type: application/json
+
+# {
+#   "title": "Robotics Circuit Challenge",
+#   "description": "Robotics and IoT-focused engineering hackathon.",
+#   "registrationFee": "600",
+#   "organizer": "RoboTech India",
+#   "mode": "offline",
+#   "location": "Nagpur",
+#   "startDate": "2025-05-12",
+#   "endDate": "2025-05-14",
+#   "registrationDeadline": "2025-05-01",
+#   "entryType": "team",
+#   "maxTeamSize": 4,
+#   "prizes": ["₹40,000", "₹20,000", "₹10,000"],
+#   "website": "https://roboticscircuit.in",
+#   "tags": ["robotics", "iot", "hardware", "engineering"]
+# }
+
+
+
+
+# POST http://localhost:3000/hackathon/apply
+# Content-Type: application/json
+
+# {
+#   "hackathonId": "6917378c9c5a58c05522da7c",
+
+#   "details": {
+#     "teamName": "The Debuggers",
+#     "teamMembers": [
+#       {
+#         "name": "Hemanshu Ganekar",
+#         "email": "hemanshu@example.com",
+#         "mobileNumber": "9876543210",
+#         "college": "XYZ Institute",
+#         "course": "B.Tech CSE"
+#       },
+#       {
+#         "name": "Vikas Ganekar",
+#         "email": "vikas@example.com",
+#         "mobileNumber": "9876501234",
+#         "college": "XYZ Institute",
+#         "course": "B.Tech IT"
+#       }
+#     ]
+#   }
+# }
+
+# GET http://localhost:3000/hackathon/show
+# Content-Type: application/json
+
+# {
+#   "Id":"6917378c9c5a58c05522da7c"
+# }
+
+POST http://localhost:3000/hackathon/recommend
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhlbWFuc2h1LUdhbmVrYXIiLCJwYXNzd29yZCI6IlJvSGVIZVZpLTExMSIsImlhdCI6MTc2MjYwMDUxOCwiZXhwIjoxNzYyNjM2NTE4fQ.h49t9PrJVmW-J0CUOQdmi8S30Xw3le1P79trSgsDL2A
+
+{
+  "username": "Hemanshu-Ganekar",
+  "location": "Mumbai",
+  "mode": "online",
+  "skills": "ai machine learning python data analytics web development"
+}
