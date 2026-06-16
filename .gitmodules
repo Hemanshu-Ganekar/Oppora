@@ -1,0 +1,3 @@
+[submodule "oppora-frontend"]
+	path = oppora-frontend
+	url = https://github.com/Hemanshu-Ganekar/oppora-frontend
